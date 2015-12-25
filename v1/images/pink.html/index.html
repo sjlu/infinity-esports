@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="http://www.typepad.com/" />
+<MTBlogIfPrivate>
+<meta name="robots" content="noindex,nofollow" />
+</MTBlogIfPrivate>
+
+<title><$MTBlogName$></title>
+
+<link rel="stylesheet" href="<$MTBlogURL$>styles.css" type="text/css" />
+<link rel="alternate" type="application/atom+xml" title="Atom" href="<$MTBlogURL$>atom.xml" />
+<link rel="alternate" type="application/rss+xml" title="RSS" href="<$MTBlogURL$>index.rdf" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="<$MTCGIPath$><agl:translated classid="MTBlogDescription" orig="%3c$MTRSDScript$%3e">MTRSDScript</agl:translated>/<$MTBlogID$>" />
+<MTUserIfShow field="foaf">
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="<$MTUserSiteURL$>foaf.rdf" />
+</MTUserIfShow>
+
+<MTBlogIfCCLicense>
+<$MTCCLicenseRDF$>
+</MTBlogIfCCLicense>
+
+</head>
+
+<body>
+
+<div id="container">
+<div id="banner-img">
+<div class="img-link"><a href="<$MTBlogURL$>"><span></span></a></div>
+</div>
+
+<div id="banner">
+<h1><a href="<$MTBlogURL$>" accesskey="1"><$MTBlogName$></a></h1>
+<h2><$MTBlogDescription$></h2>
+</div>
+
+<div id="left">
+<!--#include virtual="/<$MTBlogDirname$>/sidebar1.inc"-->
+</div>
+
+<div id="center">
+<div class="content">
+
+<MTEntries>
+<div class="entry">
+<$MTEntryTrackbackData$>
+
+<MTWeblogPostIfShow field="date_header">
+<MTDateHeader>
+<h2><$MTEntryDate format_weblog_date="1"$></h2>
+</MTDateHeader>
+</MTWeblogPostIfShow>
+
+<a id="a<$MTEntryID pad="1"$>"></a>
+
+<MTWeblogPostIfShow field="post_title">
+<h3><$MTEntryTitle$></h3>
+</MTWeblogPostIfShow>
+
+				
+<$MTEntryBody$>
+
+	
+<MTEntryIfExtended>
+<p class="extended"><a href="<$MTEntryPermalink$>#more"><$MTTrans phrase="Continue reading"$> "<$MTEntryTitle$>"</a></p>
+</MTEntryIfExtended>
+
+<p class="posted">
+<$MTEntryDate format="%B %e, %Y"$> <MTEntryIfCategories>in <MTEntryCategories glue=", "><MTBlogIfArchives archive_type="Category"><a href="<$MTCategoryArchiveLink$>"><$MTCategoryLabel$></a><MTElse><$MTCategoryLabel$></MTElse></MTBlogIfArchives></MTEntryCategories></MTEntryIfCategories>  | <a href="<$MTEntryPermalink$>">Permalink</a>
+<MTEntryIfAllowComments>
+| <a href="<$MTEntryPermalink$>#comments"><$MTTrans phrase="Comments"$> (<$MTEntryCommentCount$>)</a>
+</MTEntryIfAllowComments>
+<MTEntryIfAllowPings>
+| <a href="<$MTEntryPermalink$>#trackback"><$MTTrans phrase="TrackBack"$> (<$MTEntryTrackbackCount$>)</a>
+</MTEntryIfAllowPings>
+</p>
+</div>
+<div class="entryShim"></div>
+</MTEntries>
+
+</div>
+</div>
+
+<div id="right">
+<!--#include virtual="/<$MTBlogDirname$>/sidebar2.inc"-->
+</div>
+
+<div style="clear: both;">&#160;</div>
+
+</div>
+
+<$MTStatsScript$>
+
+</body>
+</html>
